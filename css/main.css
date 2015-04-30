@@ -351,6 +351,7 @@ body {
   color: #0c0916;
   margin: 0 5px;
   font-size: 18px;
+  line-height: 20px;
   padding-top: 20px;
   position: relative;
   padding-right: 20px;
@@ -370,7 +371,7 @@ body {
   padding-left: 75px;
 }
 .block-04 .achievements li span {
-  top: 20px;
+  top: 10px;
   left: 20px;
   font-size: 85px;
   line-height: 85px;
@@ -506,41 +507,46 @@ body {
   padding: 5px 0 5px 100px;
   background: url("../img/calendar.png") left center no-repeat;
 }
-.block-07 .slide-inner {
-  width: 217px;
-  height: 213px;
-  position: relative;
-  border: 1px solid #acacaf;
+.block-07 .slider {
+  width: 520px;
+  height: 215px;
+  overflow: hidden;
 }
-.block-07 .slide-inner .slider {
-  width: 215px;
-  height: 211px;
-}
-.block-07 .slide-inner .slider li {
-  width: 213px;
-  height: 211px;
+.block-07 .slider li {
+  float: left;
+  width: 220px;
+  height: 215px;
   line-height: 1;
-  padding: 20px 50px 20px 25px;
+  position: relative;
+  margin-right: 32px;
+  background: url("../img/pattern05.png");
+  border: 1px solid #acacaf;
+  padding: 20px 50px 20px 30px;
 }
-.block-07 .slide-inner .slider li .slide-text {
+.block-07 .slider li .slide-text {
   font-size: 16px;
   font-family: 'exo_2.0extra_light';
 }
-.block-07 .slide-inner .slider li .slide-text span {
+.block-07 .slider li .slide-text span {
   font-size: 18px;
   margin-bottom: 60px;
   font-family: 'exo_2.0light';
 }
-.block-07 .slide-inner .slider li .num {
+.block-07 .slider li .num {
   font-size: 60px;
   color: #e9a13b;
   font-family: 'exo_2.0extra_light';
 }
-.block-07 .slide-inner .slider li .num span {
+.block-07 .slider li .num span {
   font-size: 14px;
   font-family: 'exo_2.0light';
 }
-.block-07 .slide-inner .nav {
+.block-07 .slider li .num i {
+  display: block;
+  margin-top: -10px;
+  font-style: normal;
+}
+.block-07 .slider .arrow-left {
   top: 50%;
   right: 0;
   width: 13px;
@@ -549,6 +555,16 @@ body {
   margin-top: -13px;
   position: absolute;
   background: url("../img/nav.png") 0 0 no-repeat;
+}
+.block-07 .slider .arrow-right {
+  top: 50%;
+  left: 0;
+  width: 13px;
+  height: 26px;
+  cursor: pointer;
+  margin-top: -13px;
+  position: absolute;
+  background: url("../img/nav-right.png") 0 0 no-repeat;
 }
 .block-08 {
   color: #2f313c;
@@ -676,6 +692,7 @@ body {
   position: absolute;
 }
 .bottom-block .text {
+  color: #fff;
   width: 50%;
   float: left;
   font-size: 36px;

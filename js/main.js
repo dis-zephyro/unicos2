@@ -37,10 +37,3 @@ $(document).ready(function() {
     });
 
 });
-
-
-$('.slider').slick({
-    autoplay: true,
-    prevArrow: '<i></i>',
-    nextArrow: '<span class="nav"></span>'
-});

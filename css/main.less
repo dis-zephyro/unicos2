@@ -351,6 +351,7 @@ body {
 			color: #0c0916;
 			margin: 0 5px;
 			font-size: 18px;
+			line-height: 20px;
 			padding-top: 20px;
 			position: relative;
 			padding-right: 20px;
@@ -373,7 +374,7 @@ body {
 			}
 
 			span {
-				top: 20px;
+				top: 10px;
 				left: 20px;
 				font-size: 85px;
 				line-height: 85px;
@@ -545,47 +546,54 @@ body {
 		background: url("../img/calendar.png") left center no-repeat;
 	}
 
-	.slide-inner {
-		width: 217px;
-		height: 213px;
-		position: relative;
-		border: 1px solid #acacaf;
+	.slider {
+		width: 520px;
+		height: 215px;
+		overflow: hidden;
 
-		.slider {
-			width: 215px;
-			height: 211px;
+		li {
+			float: left;
+			width: 220px;
+			height: 215px;
+			line-height: 1;
+			position: relative;
+			margin-right: 32px;
+			background: url("../img/pattern05.png");
+			border: 1px solid #acacaf;
+			padding: 20px 50px 20px 30px;
 
-			li {
-				width: 213px;
-				height: 211px;
-				line-height: 1;
-				padding: 20px 50px 20px 25px;
+			.slide-text {
+				font-size: 16px;
+				font-family: @font-extra;
 
-				.slide-text {
-					font-size: 16px;
-					font-family: @font-extra;
-
-					span {
-						font-size: 18px;
-						margin-bottom: 60px;
-						font-family: @font-base;
-					}
-				}
-
-				.num {
-					font-size: 60px;
-					color: @color-yellow;
-					font-family: @font-extra;
-
-					span {
-						font-size: 14px;
-						font-family: @font-base;
-					}
+				span {
+					font-size: 18px;
+					margin-bottom: 60px;
+					font-family: @font-base;
 				}
 			}
+
+			.num {
+				font-size: 60px;
+				color: @color-yellow;
+				font-family: @font-extra;
+
+				span {
+					font-size: 14px;
+					font-family: @font-base;
+				}
+
+				i {
+					display: block;
+					margin-top: -10px;
+					font-style: normal;
+				}
+			}
+
+
 		}
 
-		.nav {
+		.arrow-left {
 			top: 50%;
 			right: 0;
 			width: 13px;
@@ -594,6 +602,17 @@ body {
 			margin-top: -13px;
 			position: absolute;
 			background: url("../img/nav.png") 0 0 no-repeat;
+		}
+
+		.arrow-right {
+			top: 50%;
+			left: 0;
+			width: 13px;
+			height: 26px;
+			cursor: pointer;
+			margin-top: -13px;
+			position: absolute;
+			background: url("../img/nav-right.png") 0 0 no-repeat;
 		}
 	}
 }
@@ -748,6 +767,7 @@ body {
 	position: absolute;
 
 	.text {
+		color: #fff;
 		width: 50%;
 		float: left;
 		font-size: 36px;
