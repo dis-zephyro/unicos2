@@ -173,6 +173,10 @@ body {
   text-align: center;
   padding: 80px 10px 0 10px;
 }
+.block-01 .benefit li a {
+  color: #fff;
+  text-decoration: none;
+}
 .block-01 .benefit li.item1 {
   background: url("../img/block-01_item1.png") top center no-repeat;
 }
