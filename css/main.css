@@ -171,10 +171,12 @@ body {
   width: 194px;
   font-size: 16px;
   text-align: center;
-  padding: 80px 10px 0 10px;
+  padding: 0 10px 0 10px;
 }
 .block-01 .benefit li a {
   color: #fff;
+  padding-top: 80px;
+  display: inline-block;
   text-decoration: none;
 }
 .block-01 .benefit li.item1 {

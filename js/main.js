@@ -26,7 +26,8 @@ $(document).ready(function() {
             navigationPosition: 'right',
             showActiveTooltip: true,
             responsive: 980,
-            navigationTooltips: ['Главная', 'О компании', 'Схема работы', 'Разработка ТУ', 'Оценка рисков', 'Разрешения', 'Декларация', 'Акция', 'Контакты']
+            anchors: ['block-01', 'block-02', 'block-03', 'block-04', 'block-05', 'block-06', 'block-07', 'block-08', 'block-09'],
+            navigationTooltips: ['Главная', 'О компании', 'Схема работы', 'Разработка ТУ', 'Оценка рисков', 'Разрешения', 'Согласование', 'Декларация', 'Контакты']
         });
 
     }
