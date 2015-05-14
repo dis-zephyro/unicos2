@@ -38,3 +38,13 @@ $(document).ready(function() {
     });
 
 });
+
+
+$('.object').slick({
+    autoplay: true,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplaySpeed: 1000
+});
+
